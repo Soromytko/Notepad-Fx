@@ -1,0 +1,10 @@
+.combo-box {
+    -fx-background-color:  #545454;
+    -fx-border-color:  #737373;
+    -fx-text-fill:  #E8E8E8;
+}
+
+.combo-box .content {
+    -fx-background-color: #737373;
+
+}
