@@ -39,7 +39,7 @@
       </VBox>
       <AnchorPane layoutX="13.0" layoutY="240.0" prefHeight="146.0" prefWidth="572.0" AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="240.0">
          <children>
-            <TextArea layoutX="114.0" layoutY="58.0" prefHeight="60.0" prefWidth="433.0" style="-fx-border-color: #737373; -fx-background-color: #737373;" stylesheets="@../../../../styles/style.css" AnchorPane.bottomAnchor="86.0" AnchorPane.leftAnchor="114.0" AnchorPane.rightAnchor="25.0" AnchorPane.topAnchor="0.0" />
+            <TextArea layoutX="114.0" layoutY="58.0" prefHeight="60.0" prefWidth="409.0" stylesheets="@styles/style.css" AnchorPane.bottomAnchor="86.0" AnchorPane.leftAnchor="114.0" AnchorPane.rightAnchor="48.0" AnchorPane.topAnchor="0.0" />
             <Label prefHeight="18.0" prefWidth="108.0" style="-fx-text-fill: #E8E8E8;" text="Описание:" />
          </children>
       </AnchorPane>
