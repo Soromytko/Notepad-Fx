@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #424242;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <AnchorPane layoutX="14.0" layoutY="18.0" prefHeight="46.0" prefWidth="555.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="14.799999999991499">
+         <children>
+            <TextField layoutX="83.0" layoutY="10.0" prefHeight="27.0" prefWidth="463.0" promptText="Wikipedia" style="-fx-background-color: #545454; -fx-border-color: #737373;" AnchorPane.leftAnchor="83.0" AnchorPane.rightAnchor="25.0" />
+            <Label layoutX="14.0" layoutY="14.0" prefHeight="18.0" prefWidth="83.0" style="-fx-text-fill: #E8E8E8;" text="Название:" AnchorPane.leftAnchor="14.0" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="14.0" layoutY="71.0" prefHeight="46.0" prefWidth="555.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="14.0">
+         <children>
+            <TextField layoutX="84.0" layoutY="10.0" prefHeight="27.0" prefWidth="491.0" promptText="https://www.wikipedia.org/" style="-fx-background-color: #545454; -fx-border-color: #737373;" AnchorPane.leftAnchor="84.0" AnchorPane.rightAnchor="25.0" />
+            <Label layoutX="14.0" layoutY="14.0" prefHeight="18.0" prefWidth="49.0" style="-fx-text-fill: #E8E8E8;" text="Ресурс:" AnchorPane.leftAnchor="14.0" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="14.0" layoutY="186.0" prefHeight="200.0" prefWidth="571.0" AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="14.799999999999955" AnchorPane.topAnchor="186.0">
+         <children>
+            <TextArea layoutX="80.0" layoutY="-65.0" prefHeight="114.0" prefWidth="463.0" style="-fx-border-color: #737373;" stylesheets="@../../../../styles/style.css" AnchorPane.bottomAnchor="86.0" AnchorPane.leftAnchor="80.0" AnchorPane.rightAnchor="28.0" AnchorPane.topAnchor="0.0" />
+            <Label prefHeight="18.0" prefWidth="83.0" style="-fx-text-fill: #E8E8E8;" text="Описание:" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="14.0" layoutY="117.0" prefHeight="46.0" prefWidth="555.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="14.0">
+         <children>
+            <TextField layoutX="84.0" layoutY="10.0" prefHeight="27.0" prefWidth="491.0" promptText="https://www.wikipedia.org/" style="-fx-background-color: #545454; -fx-border-color: #737373;" AnchorPane.leftAnchor="84.0" AnchorPane.rightAnchor="25.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
