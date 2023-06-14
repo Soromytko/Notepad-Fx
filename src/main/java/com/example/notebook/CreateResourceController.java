@@ -21,14 +21,9 @@ public class CreateResourceController implements Initializable {
     @FXML private TextField resourceUrl;
     @FXML private ComboBox comboBox;
 
-    public CreateResourceController() {
-
-    }
-
     @Override public void initialize(URL url, ResourceBundle rb) {
-        ObservableList<String> langs = FXCollections.observableArrayList("Java", "JavaScript", "C#", "Python");
-        comboBox.setItems(langs);
-        comboBox.setValue("Java");
+        comboBox.setItems(AppData.categories);
+        comboBox.setValue(AppData.categories.get(0));
     }
 
     @FXML private void onAddCategory(ActionEvent event) {
@@ -39,6 +34,7 @@ public class CreateResourceController implements Initializable {
 
         System.out.println(resourceName.getText());
         System.out.println(resourceUrl.getText());
+        System.out.println(comboBox.getValue());
 
 
 
