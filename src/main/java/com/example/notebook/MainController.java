@@ -19,6 +19,9 @@ public class MainController implements Initializable {
     @FXML private TextField search;
     @FXML private ComboBox comboBox;
     @FXML private TableView table;
+    @FXML private TableColumn namePrimaryColumn;
+    @FXML private TableColumn urlPrimaryColumn;
+    @FXML private TableColumn categoryPrimaryColumn;
 
     @FXML private void onSearch(ActionEvent event) {
         System.out.println(search.getText());
@@ -57,5 +60,8 @@ public class MainController implements Initializable {
         table.getColumns().set(0, nameColumn);
         table.getColumns().set(1, urlColumn);
         table.getColumns().set(2, categoryColumn);
+        nameColumn.setStyle(namePrimaryColumn.getStyle());
+        urlColumn.setStyle(urlPrimaryColumn.getStyle());
+        categoryColumn.setStyle(categoryPrimaryColumn.getStyle());
     }
 }
