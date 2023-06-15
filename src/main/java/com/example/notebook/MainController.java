@@ -46,9 +46,9 @@ public class MainController implements Initializable {
 
 
         AppData.resourceItems = FXCollections.observableArrayList(
-                new ResourceItem("Wikds", "dsds", "dsds"),
-                new ResourceItem("22", "dsds", "dsds"),
-                new ResourceItem("Wi33kds", "dsds", "dsds")
+                new ResourceItem("Wikipedia", "https://www.wikipedia.org/", "Наука"),
+                new ResourceItem("Steam", "https://store.steampowered.com/", "Развлечения"),
+                new ResourceItem("Ria", "https://ria.ru/", "Новости")
         );
         table.setItems(AppData.resourceItems);
         TableColumn<ResourceItem, String> nameColumn = new TableColumn<ResourceItem, String>("Название");
