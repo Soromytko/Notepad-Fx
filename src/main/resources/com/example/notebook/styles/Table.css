@@ -1,0 +1,11 @@
+.text-area {
+    text-area-background:  #545454;
+    -fx-background-color: #737373; 
+    -fx-border-color:  #737373;
+    -fx-text-fill:  #E8E8E8;
+}
+
+.text-area .content {
+    -fx-background-color: text-area-background;
+
+}

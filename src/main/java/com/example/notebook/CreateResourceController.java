@@ -31,18 +31,8 @@ public class CreateResourceController implements Initializable {
     }
 
     @FXML private void onAddResource(ActionEvent event) {
-
-        System.out.println(resourceName.getText());
-        System.out.println(resourceUrl.getText());
-        System.out.println(comboBox.getValue());
-
-
-
-        return;
-
-//	    System.out.println("on Click");
-//
-//        Stage thisStage = (Stage) WindowLoader.getScene(event).getWindow();
-//        thisStage.close();
+	    System.out.println("on Click");
+        Stage thisStage = (Stage) WindowLoader.getScene(event).getWindow();
+        thisStage.close();
     }
 }
