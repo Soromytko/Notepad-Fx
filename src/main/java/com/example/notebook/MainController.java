@@ -7,7 +7,10 @@ import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.Node;
 import javafx.scene.control.ComboBox;
+import javafx.scene.control.TableColumn;
+import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
+import javafx.scene.control.cell.PropertyValueFactory;
 
 import java.net.URL;
 import java.util.ResourceBundle;
@@ -15,6 +18,7 @@ import java.util.ResourceBundle;
 public class MainController implements Initializable {
     @FXML private TextField search;
     @FXML private ComboBox comboBox;
+    @FXML private TableView table;
 
     @FXML private void onSearch(ActionEvent event) {
         System.out.println(search.getText());
@@ -36,5 +40,22 @@ public class MainController implements Initializable {
 
         comboBox.setItems(categories);
         comboBox.setValue(categories.get(0));
+
+
+        AppData.resourceItems = FXCollections.observableArrayList(
+                new ResourceItem("Wikds", "dsds", "dsds"),
+                new ResourceItem("22", "dsds", "dsds"),
+                new ResourceItem("Wi33kds", "dsds", "dsds")
+        );
+        table.setItems(AppData.resourceItems);
+        TableColumn<ResourceItem, String> nameColumn = new TableColumn<ResourceItem, String>("Название");
+        TableColumn<ResourceItem, String> urlColumn = new TableColumn<ResourceItem, String>("Ссылка");
+        TableColumn<ResourceItem, String> categoryColumn = new TableColumn<ResourceItem, String>("Категория");
+        nameColumn.setCellValueFactory(new PropertyValueFactory<ResourceItem, String>("name"));
+        urlColumn.setCellValueFactory(new PropertyValueFactory<ResourceItem, String>("url"));
+        categoryColumn.setCellValueFactory(new PropertyValueFactory<ResourceItem, String>("category"));
+        table.getColumns().set(0, nameColumn);
+        table.getColumns().set(1, urlColumn);
+        table.getColumns().set(2, categoryColumn);
     }
 }
