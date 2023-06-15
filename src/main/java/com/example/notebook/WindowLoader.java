@@ -33,4 +33,11 @@ public class WindowLoader {
         Node node = (Node)(event.getSource());
         return node.getScene();
     }
+
+    public static Stage getStage(ActionEvent event) {
+        Scene scene = getScene(event);
+        return (Stage)scene.getWindow();
+    }
+
+
 }

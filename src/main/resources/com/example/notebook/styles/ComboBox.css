@@ -1,7 +1,15 @@
 .combo-box {
     -fx-background-color:  #545454;
     -fx-border-color:  #737373;
+    /*-fx-text-fill:  #737373;*/
+}
+
+.combo-box .cell{
     -fx-text-fill:  #E8E8E8;
+    -fx-border-color: #545454;
+    -fx-background-color: #545454;
+
+    /*-fx-font: 16px "Arial";*/
 }
 
 .combo-box .content {
